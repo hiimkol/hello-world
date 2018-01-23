@@ -9,6 +9,7 @@ import javax.websocket.server.ServerEndpoint;
 public class Server{
 	@OnOpen
 	public void open(Session session) {
+		System.out.println("hello session: "+session.getId());
 	}
 
 	@OnClose
