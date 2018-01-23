@@ -1,4 +1,10 @@
 package krader_jar;
+import javax.websocket.OnClose;
+import javax.websocket.OnError;
+import javax.websocket.OnMessage;
+import javax.websocket.OnOpen;
+import javax.websocket.Session;
+import javax.websocket.server.ServerEndpoint;
 @ServerEndpoint("/hello")
 public class Server{
 	@OnOpen
